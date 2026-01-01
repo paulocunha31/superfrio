@@ -1,0 +1,165 @@
+body {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-bg {
+  background: #000000;
+}
+
+.header {
+  box-sizing: border-box;
+  padding: 20px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-nav {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.container {
+  justify-self: end;
+  display: flex;
+  align-items: center;
+}
+
+.mobileButton {
+  display: none;
+  align-items: center;
+  background: #111111;
+  border: none;
+  padding: 8px 12px;
+  color: #ffffff;
+  font-size: 1.125rem;
+  border-radius: 4px;
+  gap: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.mobileButton:hover {
+  background: #2e2e2e;
+}
+
+.mobileButton::after {
+  display: block;
+  content: "";
+  width: 18px;
+  height: 2px;
+  background: #ffffff;
+  box-shadow: 0 -7px #ffffff, 0 7px #ffffff;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.mobileButton.active::after {
+  transform: rotate(180deg);
+  box-shadow: 0 0 #ffffff, 0 0 #ffffff;
+}
+
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header-menu li {
+  margin-left: 5px;
+  position: relative;
+}
+
+.header-menu li a {
+  color: #ffffff;
+  display: inline-block;
+  padding: 0.5rem;
+  font-size: 1.125rem;
+}
+
+.header-menu li a:hover {
+  color: #ffa500;
+}
+.header-menu [href="./login.html"] {
+  background: #111111;
+  border-radius: 4px;
+  padding: 0.625rem 1.25rem;
+}
+
+.header-menu [href="./login.html"]:hover {
+  color: #ffffff;
+  background: #ffa500;
+}
+
+@media (max-width: 800px) {
+  .header-menu {
+    display: none;
+  }
+
+  .header-menu li {
+    border-top: 1px solid #2e2e2e;
+    margin: 0;
+  }
+
+  .header-menu li:first-child,
+  .header-menu li:last-child {
+    border-top: none;
+  }
+
+  .header-menu li a {
+    display: block;
+    margin: 0.3125rem 0.9375rem;
+    font-size: 1rem;
+  }
+
+  .header-menu li:last-child a {
+    margin: 0 0.9375rem;
+  }
+
+  .mobileButton {
+    display: flex;
+  }
+
+  .header-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: initial;
+    top: 54px;
+    right: 0px;
+    background: #000000;
+    border-radius: 0 0 4px 4px;
+    max-width: 260px;
+    width: 100%;
+    box-shadow: 0 2px 3px #000000;
+    transform: translateX(-10px);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    padding-bottom: 0.9375rem;
+  }
+
+  .header-menu.mobile-active {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+}
