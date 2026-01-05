@@ -1,5 +1,5 @@
 .header-bg {
-  background: #000000;
+  background: var(--cor-12);
 }
 
 .header {
@@ -27,10 +27,9 @@
 .mobileButton {
   display: none;
   align-items: center;
-  background: #111111;
+  background: var(--cor-11);
   border: none;
   padding: 8px 12px;
-  color: #ffffff;
   font-size: 1.125rem;
   border-radius: 4px;
   gap: 10px;
@@ -39,7 +38,7 @@
 }
 
 .mobileButton:hover {
-  background: #2e2e2e;
+  background: var(--cor-10);
 }
 
 .mobileButton::after {
@@ -47,15 +46,15 @@
   content: "";
   width: 18px;
   height: 2px;
-  background: #ffffff;
-  box-shadow: 0 -7px #ffffff, 0 7px #ffffff;
+  background: var(--cor-0);
+  box-shadow: 0 -7px var(--cor-0), 0 7px var(--cor-0);
   border-radius: 4px;
   transition: 0.3s;
 }
 
 .mobileButton.active::after {
   transform: rotate(180deg);
-  box-shadow: 0 0 #ffffff, 0 0 #ffffff;
+  box-shadow: 0 0 var(--cor-0), 0 0 var(--cor-0);
 }
 
 .header-menu {
@@ -69,7 +68,6 @@
 }
 
 .header-menu li a {
-  color: #ffffff;
   display: inline-block;
   padding: 0.5rem;
   font-size: 1.125rem;
@@ -78,17 +76,17 @@
 }
 
 .header-menu li a:hover {
-  color: #ffa500;
+  color: var(--cor-p1);
 }
 .header-menu [href="./login.html"] {
-  background: #111111;
+  background: var(--cor-11);
   border-radius: 4px;
   padding: 0.625rem 1.25rem;
 }
 
 .header-menu [href="./login.html"]:hover {
-  color: #ffffff;
-  background: #ffa500;
+  color: var(--cor-0);
+  background: var(--cor-p1);
 }
 
 @media (max-width: 800px) {
@@ -97,7 +95,7 @@
   }
 
   .header-menu li {
-    border-top: 1px solid #2e2e2e;
+    border-top: 1px solid var(--cor-10);
     margin: 0;
   }
 
@@ -128,11 +126,11 @@
     align-items: initial;
     top: 54px;
     right: 0px;
-    background: #000000;
+    background: var(--cor-12);
     border-radius: 0 0 4px 4px;
     max-width: 260px;
     width: 100%;
-    box-shadow: 0 2px 3px #000000;
+    box-shadow: 0 2px 3px var(--cor-12);
     transform: translateX(-10px);
     opacity: 0;
     visibility: hidden;

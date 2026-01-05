@@ -1,7 +1,7 @@
 .introducao-bg {
   background-image: url("/img/banner.jpg");
   height: 600px;
-  background-position: center;
+  background-position: center top;
   background-size: cover;
   position: relative;
 }
@@ -23,7 +23,6 @@
   height: 100%;
   margin-left: auto;
   margin-right: auto;
-  color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -36,23 +35,10 @@
 
 .introducao h1 {
   margin-bottom: 32px;
-  font-size: 64px;
-  line-height: 1.125;
-  font-family: "Poppins";
-  font-weight: 600;
-}
-
-.introducao h1 span {
-  color: #ffa500;
 }
 
 .introducao p {
   margin-bottom: 20px;
-  font-size: 24px;
-  line-height: 1.5;
-  color: #c9c9c9;
-  font-family: "Roboto";
-  font-weight: 400;
 }
 
 @media (max-width: 1200px) {
