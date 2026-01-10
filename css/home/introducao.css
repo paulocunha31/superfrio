@@ -1,7 +1,7 @@
 .introducao-bg {
   background: url("/img/banner.jpg") no-repeat center center;
-  height: 600px;
   background-size: cover;
+  height: 600px;
   position: relative;
   background-attachment: fixed;
 }
@@ -17,7 +17,6 @@
 .introducao {
   position: relative;
   z-index: 2;
-  box-sizing: border-box;
   padding: 20px;
   max-width: 1200px;
   height: 100%;
@@ -25,7 +24,7 @@
   margin-right: auto;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
   padding-bottom: 80px;
 }
 
@@ -43,8 +42,8 @@
 
 @media (max-width: 1200px) {
   .introducao-bg {
+    background: url("/img/banner.jpg") no-repeat top center;
     height: 500px;
-    background-attachment: initial;
   }
   .introducao-conteudo {
     max-width: 400px;
