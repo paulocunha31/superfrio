@@ -1,0 +1,54 @@
+.beneficios-bg {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 120px 20px 80px;
+}
+
+.titulo-container {
+  max-width: 600px;
+  margin-bottom: 32px;
+}
+
+.beneficios-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.beneficios-item li {
+  display: flex;
+  align-items: center;
+}
+
+.beneficios-item li::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 10px;
+  background-image: url("../../img/icones/lista.svg");
+  margin-right: 8px;
+}
+
+@media (max-width: 1200px) {
+  .titulo-container {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 800px) {
+  .beneficios-bg {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .titulo-container {
+    max-width: 320px;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .beneficios-item {
+    grid-template-columns: 1fr;
+  }
+}

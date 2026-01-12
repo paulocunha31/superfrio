@@ -4,6 +4,7 @@
   height: 600px;
   position: relative;
   background-attachment: fixed;
+  display: flex;
 }
 
 .introducao-bg::after {
@@ -15,17 +16,13 @@
 }
 
 .introducao {
-  position: relative;
   z-index: 2;
-  padding: 20px;
+  width: 100%;
   max-width: 1200px;
-  height: 100%;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding-bottom: 80px;
+  align-self: flex-end;
+  padding: 0 20px 80px;
 }
 
 .introducao-conteudo {
@@ -45,6 +42,7 @@
     background: url("/img/banner.jpg") no-repeat top center;
     height: 500px;
   }
+
   .introducao-conteudo {
     max-width: 400px;
   }
@@ -57,7 +55,18 @@
   .introducao h1 {
     margin-bottom: 16px;
   }
+
+  .introducao {
+    padding-bottom: 60px;
+  }
+
   .introducao-conteudo {
     max-width: 320px;
+  }
+}
+
+@media (max-width: 600px) {
+  .introducao {
+    padding-bottom: 40px;
   }
 }
