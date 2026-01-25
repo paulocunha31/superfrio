@@ -10,3 +10,5 @@
 /* Hone */
 @import "./home/introducao.css";
 @import "./home/beneficios.css";
+@import "./home/servicos.css";
+@import "./home/blog.css";

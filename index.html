@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
@@ -18,12 +18,12 @@
   </head>
   <body>
     <header class="header-bg">
-      <div class="header">
+      <div class="header container">
         <nav class="header-nav" aria-label="primaria">
           <a href="./">
             <img src="./img//icones/SuperFrio.svg" alt="Logo" />
           </a>
-          <div class="container">
+          <div class="header-container">
             <button
               id="btnMenu"
               aria-controls="menu"
@@ -50,10 +50,10 @@
 
     <main>
       <section class="introducao-bg">
-        <div class="introducao">
+        <div class="introducao container">
           <div class="introducao-conteudo">
             <h1 class="font-1-xxl cor-0">
-              O conforto que voçê merece<span class="cor-p1">.</span>
+              O conforto que você merece<span class="cor-p1">.</span>
             </h1>
             <p class="font-2-l cor-6">
               Especialistas em ar-condicionado automotivo, garantindo eficiência
@@ -65,18 +65,196 @@
       </section>
 
       <section class="beneficios-bg" aria-labelledby="beneficios-titulo">
-        <div class="titulo-container">
-          <h2 id="beneficios-titulo" class="font-1-xxl">
-            por que escolher nossa empresa<span class="cor-p1">.</span>
-          </h2>
+        <div class="beneficios container">
+          <div class="titulo-container">
+            <h2 id="beneficios-titulo" class="font-1-xxl">
+              por que escolher <br />
+              a Super Frio<span class="cor-p1">.</span>
+            </h2>
+          </div>
+          <div class="beneficios-container">
+            <ul class="beneficios-item font-2-m cor-9">
+              <li>Garantia nos serviços realizados</li>
+              <li>Profissional especializado</li>
+              <li>Peças e insumos de alta qualidade</li>
+              <li>Diagnóstico preciso e transparente</li>
+            </ul>
+          </div>
         </div>
-        <div class="beneficios-container">
-          <ul class="beneficios-item font-2-m cor-9">
-            <li>Garantia</li>
-            <li>Profissional especializado</li>
-            <li>Peças de qualidade</li>
-            <li>Diagnóstico preciso</li>
-          </ul>
+      </section>
+
+      <section class="servico-bg" aria-labelledby="servicos-titulo">
+        <div class="container">
+          <div class="titulo">
+            <h2 id="servicos-titulo" class="font-1-xxl cor-0">
+              nossos serviços<span class="cor-p1">.</span>
+            </h2>
+          </div>
+        </div>
+        <div class="servico container">
+          <article class="servico-item">
+            <div class="servico-intro">
+              <img
+                src="./img//icones/higiene.svg"
+                alt="Ícone de Higienização do ar-condicionado"
+              />
+              <h3 class="font-1-m cor-0">
+                Higienização do <br />Ar-condicionado
+              </h3>
+            </div>
+            <ul class="font-2-s cor-5">
+              <li>Elimina odores, fungos e <br />bactérias do sistema</li>
+              <li>A partir de: <span class="font-1-m cor-0">R$ 800</span></li>
+            </ul>
+            <a class="botao" href="#">Agendar Serviço</a>
+          </article>
+
+          <article class="servico-item">
+            <div class="servico-intro">
+              <img
+                src="./img//icones/reparo.svg"
+                alt="Ícone de reparo do ar-condicionado "
+              />
+              <h3 class="font-1-m cor-0">Reparo de <br />Compressor</h3>
+            </div>
+            <ul class="font-2-s cor-5">
+              <li>Correção de ruídos, falhas <br />e perda de compressão</li>
+              <li>A partir de: <span class="font-1-m cor-0">R$ 700</span></li>
+            </ul>
+            <a class="botao" href="#">Agendar Serviço</a>
+          </article>
+
+          <article class="servico-item">
+            <div class="servico-intro">
+              <img
+                src="./img//icones/filtro.svg"
+                alt="Ícone troca de filtro do ar-condicionado"
+              />
+              <h3 class="font-1-m cor-0">
+                Troca de filtro / <br />Filtro Anti-Pòlen
+              </h3>
+            </div>
+            <ul class="font-2-s cor-5">
+              <li>Melhora o fluxo de ar e <br />a qualidade interna</li>
+              <li>A partir de: <span class="font-1-m cor-0">R$ 35</span></li>
+            </ul>
+            <a class="botao" href="#">Agendar Serviço</a>
+          </article>
+
+          <article class="servico-item">
+            <div class="servico-intro">
+              <img
+                src="./img//icones/gas.svg"
+                alt="Ícone de recarga do ar-condicionado"
+              />
+              <h3 class="font-1-m cor-0">Recarga de <br />Gás</h3>
+            </div>
+            <ul class="font-2-s cor-5">
+              <li>Restaura o resfriamento <br />ideal do sistema</li>
+              <li>A partir de: <span class="font-1-m cor-0">R$ 250</span></li>
+            </ul>
+            <a class="botao" href="#">Agendar Serviço</a>
+          </article>
+
+          <article class="servico-item">
+            <div class="servico-intro">
+              <img
+                src="./img//icones/contraste.svg"
+                alt="Ícone detecção de vazamentos do ar-condicionado"
+              />
+              <h3 class="font-1-m cor-0">Detecção de <br />Vazamentos</h3>
+            </div>
+            <ul class="font-2-s cor-5">
+              <li>Identificação precisa com <br />teste de pressão e luz UV</li>
+              <li>A partir de: <span class="font-1-m cor-0">R$ 100</span></li>
+            </ul>
+            <a class="botao" href="#">Agendar Serviço</a>
+          </article>
+
+          <article class="servico-item">
+            <div class="servico-intro">
+              <img
+                src="./img//icones/sistema.svg"
+                alt="Ícone troca de sistema do ar-condicionado"
+              />
+              <h3 class="font-1-m cor-0">
+                Troca do sistema do <br />Ar-condicionado
+              </h3>
+            </div>
+            <ul class="font-2-s cor-5">
+              <li>Sistema novo, instalado e <br />regulado com precisão</li>
+              <li>A partir de: <span class="font-1-m cor-0">R$ 900</span></li>
+            </ul>
+            <a class="botao" href="#">Agendar Serviço</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="blog-bg">
+        <div class="blog container">
+          <header class="blog-header">
+            <div>
+              <h2 class="font-1-xxl">
+                conteúdo completo sobre <br />
+                ar-condicionado automotivo<span class="cor-p1">.</span>
+              </h2>
+              <p class="font-2-l cor-9">
+                Aprenda como preservar seu sistema de ar, economizar nas
+                manutenções e acompanhar as novidades do mercado automotivo no
+                nosso blog.
+              </p>
+            </div>
+            <a href="./blog.html" class="blog-link cor-p1">
+              veja todos os posts
+            </a>
+          </header>
+
+          <div class="blog-lista">
+            <article class="blog-item">
+              <img
+                src="./img//recarga-gas.jpg"
+                alt="Recarga de gás no ar-condicionado automotivo"
+              />
+              <h3 class="font-1-m">
+                A recarga de gás no ar-condicionado automotivo: entenda quando
+                fazer.
+              </h3>
+              <p class="font-2-s cor-9">
+                A recarga de gás no ar-condicionado é um dos procedimentos mais
+                comuns e essenciais para manter o sistema de climatização...
+              </p>
+              <a href="#" class="blog-saiba link">Saiba mais</a>
+            </article>
+
+            <article class="blog-item">
+              <img
+                src="./img//recarga-gas.jpg"
+                alt="Recarga de gás no ar-condicionado automotivo"
+              />
+              <h3 class="font-1-m">
+                Ar-condicionado: posso usar com os vidros abertos?
+              </h3>
+              <p class="font-2-s cor-9">
+                Usar o ar-condicionado com os vidros abertos é uma dúvida comum
+                entre motoristas e profissionais da área automotiva...
+              </p>
+              <a href="#" class="blog-saiba link">Saiba mais</a>
+            </article>
+            <article class="blog-item">
+              <img
+                src="./img//recarga-gas.jpg"
+                alt="Recarga de gás no ar-condicionado automotivo"
+              />
+              <h3 class="font-1-m">
+                Veículos elétricos: o que muda no ar-condicionado automotivo.
+              </h3>
+              <p class="font-2-s cor-9">
+                Com o avanço dos veículos elétricos, o setor automotivo está
+                passando por transformações profundas...
+              </p>
+              <a href="#" class="blog-saiba link">Saiba mais</a>
+            </article>
+          </div>
         </div>
       </section>
     </main>

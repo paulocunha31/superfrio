@@ -1,8 +1,9 @@
 .beneficios-bg {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 120px 20px 80px;
+  background: var(--cor-0);
+}
+
+.beneficios {
+  padding: 120px 20px;
 }
 
 .titulo-container {
@@ -31,13 +32,16 @@
 }
 
 @media (max-width: 1200px) {
+  .beneficios {
+    padding: 80px 20px;
+  }
   .titulo-container {
     max-width: 500px;
   }
 }
 
 @media (max-width: 800px) {
-  .beneficios-bg {
+  .beneficios {
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -48,6 +52,10 @@
 }
 
 @media (max-width: 600px) {
+  .beneficios {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
   .beneficios-item {
     grid-template-columns: 1fr;
   }

@@ -3,10 +3,8 @@
 }
 
 .header {
-  padding: 20px;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .header-nav {
@@ -17,7 +15,7 @@
   position: relative;
 }
 
-.container {
+.header-container {
   justify-self: end;
   display: flex;
   align-items: center;
