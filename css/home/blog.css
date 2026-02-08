@@ -23,7 +23,7 @@
   white-space: nowrap;
 }
 
-.blog-lista {
+.blog .blog-lista {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;

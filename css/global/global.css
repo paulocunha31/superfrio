@@ -14,6 +14,7 @@ h2,
 h3,
 h4,
 ul,
+ol,
 p {
   margin: 0;
   padding: 0;
@@ -28,6 +29,7 @@ a {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 img[src$=".jpg"] {

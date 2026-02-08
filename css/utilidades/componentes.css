@@ -73,3 +73,30 @@
     font-size: 1rem;
   }
 }
+
+/* titulos internos */
+
+.titulo-bg {
+  padding: 60px 0;
+  background-color: var(--cor-11);
+}
+
+.titulo {
+  background: url("../../img/dec/top-right.svg") no-repeat top right 20px;
+}
+
+.titulo h1 {
+  margin-bottom: 4px;
+}
+
+@media (max-width: 800px) {
+  .titulo-bg {
+    padding: 40px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .titulo {
+    background: none;
+  }
+}

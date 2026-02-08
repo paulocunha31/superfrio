@@ -2,15 +2,16 @@
   background-color: var(--cor-11);
 }
 
-.titulo {
-  padding: 80px 0 60px;
-}
-
 .servico {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
   padding-bottom: 120px;
+}
+
+.servico h2 {
+  grid-column: 1/-1;
+  padding: 80px 0px 60px;
 }
 
 .servico-item {
@@ -44,12 +45,12 @@
 }
 
 @media (max-width: 1200px) {
-  .titulo {
-    padding: 60px 0 40px;
-  }
-
   .servico {
     gap: 20px;
+  }
+
+  .servico h2 {
+    padding: 60px 0 40px;
   }
 }
 
@@ -60,18 +61,15 @@
 }
 
 @media (max-width: 800px) {
-  .titulo {
-    padding: 40px 0 32px;
-  }
   .servico {
     padding-bottom: 40px;
   }
+
+  .servico h2 {
+    padding: 40px 0px 0px;
+  }
 }
 @media (max-width: 600px) {
-  .titulo {
-    padding: 20px 0;
-  }
-
   .servico {
     grid-template-columns: 1fr;
   }
