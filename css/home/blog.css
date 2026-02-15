@@ -73,10 +73,6 @@
 }
 
 @media (max-width: 600px) {
-  .blog-bg {
-    padding: 60px 0px;
-  }
-
   .blog .blog-lista {
     gap: 20px;
     grid-template-columns: 1fr;
