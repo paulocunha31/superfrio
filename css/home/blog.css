@@ -54,7 +54,7 @@
     margin-bottom: 20px;
   }
 
-  .blog-lista {
+  .blog .blog-lista {
     gap: 20px;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -77,7 +77,7 @@
     padding: 60px 0px;
   }
 
-  .blog-lista {
+  .blog .blog-lista {
     gap: 20px;
     grid-template-columns: 1fr;
   }
