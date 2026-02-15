@@ -62,7 +62,7 @@
 
 @media (max-width: 800px) {
   .servico {
-    padding-bottom: 40px;
+    padding-bottom: 80px;
   }
 
   .servico h2 {
@@ -72,5 +72,6 @@
 @media (max-width: 600px) {
   .servico {
     grid-template-columns: 1fr;
+    padding-bottom: 60px;
   }
 }
