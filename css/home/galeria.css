@@ -46,6 +46,14 @@
   .galeria-item {
     grid-template-columns: 1fr;
     gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .galeria-section {
+    padding: 0px;
+  }
+  .galeria-item {
     padding-top: 40px;
     padding-bottom: 40px;
   }
