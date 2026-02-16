@@ -1,3 +1,6 @@
+.galeria-section {
+  padding-bottom: 60px;
+}
 .galeria-header h1 {
   margin-bottom: 16px;
 }
@@ -6,7 +9,7 @@
   background: linear-gradient(to right, var(--cor-0) 30%, var(--cor-11) 0%);
 }
 
-.galeria {
+.galeria-item {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
@@ -14,11 +17,11 @@
   padding-bottom: 60px;
 }
 
-.galeria h2 {
+.galeria-item h2 {
   margin-bottom: 20px;
 }
 
-.galeria h2::before {
+.galeria-item h2::before {
   content: "";
   display: block;
   width: 12px;
@@ -27,16 +30,20 @@
   margin-bottom: 8px;
 }
 
-.galeria p {
+.galeria-item p {
   margin-bottom: 20px;
 }
 
 @media (max-width: 800px) {
+  .galeria-section {
+    padding-bottom: 40px;
+  }
+
   .galeria-bg {
     background: var(--cor-11);
   }
 
-  .galeria {
+  .galeria-item {
     grid-template-columns: 1fr;
     gap: 20px;
     padding-top: 40px;
