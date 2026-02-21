@@ -1,5 +1,6 @@
 .post-header h1 {
   margin-bottom: 16px;
+  max-width: 25ch;
 }
 
 .post-data {
