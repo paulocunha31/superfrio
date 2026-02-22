@@ -29,16 +29,12 @@
 }
 
 .post-descricao h2 {
-  margin-top: 24px;
-  margin-bottom: 8px;
-}
-
-.post-descricao p {
+  margin-top: 32px;
   margin-bottom: 8px;
 }
 
 .post-lista {
-  margin: 8px 0;
+  margin: 16px 0;
   padding-left: 22px;
   list-style: initial;
 }
@@ -60,7 +56,7 @@
 }
 
 .post-descricao .post-paragrafo-destaque {
-  margin-bottom: 16px;
+  margin: 16px 0;
 }
 
 .posts-relacionados {
@@ -88,10 +84,5 @@
 
   .post-descricao {
     padding: 32px 0 20px;
-  }
-
-  .post-descricao h2 {
-    margin-top: 32px;
-    margin-bottom: 8px;
   }
 }
