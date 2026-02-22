@@ -33,6 +33,17 @@
   margin-bottom: 8px;
 }
 
+.post-descricao p a {
+  text-decoration: underline;
+  color: var(--cor-p3);
+}
+.post-descricao p a:hover {
+  color: var(--cor-p2);
+}
+.post-descricao p a:visited {
+  color: var(--cor-p5);
+}
+
 .post-lista {
   margin: 16px 0;
   padding-left: 22px;
