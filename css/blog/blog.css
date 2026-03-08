@@ -1,9 +1,9 @@
-.blog-page .blog-post {
+.blog-page .blog-destaque {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.blog-page .blog-lista {
+.blog-page .blog-destaque-lista {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4px;
@@ -50,7 +50,7 @@
 }
 
 @media (max-width: 800px) {
-  .blog-page .blog-post {
+  .blog-page .blog-destaque {
     padding-top: 40px;
     padding-bottom: 0px;
   }
@@ -60,7 +60,7 @@
 }
 
 @media (max-width: 600px) {
-  .blog-page .blog-lista {
+  .blog-page .blog-destaque-lista {
     grid-template-columns: 1fr;
     gap: 8px;
   }
